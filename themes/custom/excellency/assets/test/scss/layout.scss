@@ -9,8 +9,28 @@
   padding: 15px;
 }
 
-#splash-image {
+#kitteh {
   background: url(../images/splash/cat.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+#kitteh2 {
+  background: url(../images/splash/cat-laptop.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+#kitteh3 {
+  background: url(../images/splash/cat-awesome.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

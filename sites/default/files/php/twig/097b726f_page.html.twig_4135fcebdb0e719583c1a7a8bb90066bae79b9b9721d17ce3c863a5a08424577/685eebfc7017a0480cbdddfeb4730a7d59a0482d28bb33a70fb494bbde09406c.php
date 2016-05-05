@@ -63,20 +63,22 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
   <!-- End of Bootstrap First Impression -->
 
   <!-- Kitteh!! -->
-  <div id=\"splash-image\" width=\"400px\" height=\"400px\">
+  <div id=\"kitteh\" width=\"400px\" height=\"400px\">
+    <div id=\"trigger1\" class=\"spacer s0\"></div>
     <div class=\"spacer s2\"></div>
-      <div id=\"animate1\" class=\"box2 skin\">
-\t     <p>You wouldn't like me, when I'm angry!</p>
-\t      <a href=\"#\" class=\"viewsource\">view source</a>
+      <img id=\"glasses\" class=\"box2 skin\" src=\"";
+        // line 27
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["directory"]) ? $context["directory"] : null), "html", null, true));
+        echo "/assets/images/deal-with-it.png\">
+\t      <a href=\"http://anthonyplummer.elementfx.com\" class=\"viewsource\">Meow!</a>
       </div>
     <div class=\"spacer s2\"></div>
   </div>
-  <div id=\"trigger1\" class=\"spacer s0\"></div>
   <!-- END Kitteh -->
 
   <header role=\"banner\">
     ";
-        // line 36
+        // line 35
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "html", null, true));
         echo "
   </header>
@@ -89,7 +91,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 
         <div id=\"content\" class=\"layout-content\">
           ";
-        // line 46
+        // line 45
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
         echo "
         </div>
@@ -98,6 +100,11 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
     </div>
   </div>
   <!-- END of Main Content from Drupal -->
+
+  <!-- Moar Kitteh!! -->
+  <div id=\"kitteh2\" width=\"400px\" height=\"400px\">
+  </div>
+  <!-- END Moar Kitteh -->
 
   <!-- Haiku Block -->
   <div id=\"haiku\" class=\"container\">
@@ -124,11 +131,16 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
   </div>
   <!-- END of Haiku Block -->
 
+  <!-- Moar Kitteh!! -->
+  <div id=\"kitteh3\" width=\"400px\" height=\"400px\">
+  </div>
+  <!-- END Moar Kitteh -->
+
   <!-- Footer -->
   <div class=\"row\">
     <footer class=\"footer\" role=\"contentinfo\">
       ";
-        // line 82
+        // line 91
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer", array()), "html", null, true));
         echo "
       <!-- Footer Column 1 -->
@@ -174,7 +186,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 
     public function getDebugInfo()
     {
-        return array (  132 => 82,  93 => 46,  80 => 36,  43 => 1,);
+        return array (  144 => 91,  95 => 45,  82 => 35,  71 => 27,  43 => 1,);
     }
 }
 /* <div class="layout-container">*/
@@ -200,15 +212,14 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*   <!-- End of Bootstrap First Impression -->*/
 /* */
 /*   <!-- Kitteh!! -->*/
-/*   <div id="splash-image" width="400px" height="400px">*/
+/*   <div id="kitteh" width="400px" height="400px">*/
+/*     <div id="trigger1" class="spacer s0"></div>*/
 /*     <div class="spacer s2"></div>*/
-/*       <div id="animate1" class="box2 skin">*/
-/* 	     <p>You wouldn't like me, when I'm angry!</p>*/
-/* 	      <a href="#" class="viewsource">view source</a>*/
+/*       <img id="glasses" class="box2 skin" src="{{ directory }}/assets/images/deal-with-it.png">*/
+/* 	      <a href="http://anthonyplummer.elementfx.com" class="viewsource">Meow!</a>*/
 /*       </div>*/
 /*     <div class="spacer s2"></div>*/
 /*   </div>*/
-/*   <div id="trigger1" class="spacer s0"></div>*/
 /*   <!-- END Kitteh -->*/
 /* */
 /*   <header role="banner">*/
@@ -229,6 +240,11 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*     </div>*/
 /*   </div>*/
 /*   <!-- END of Main Content from Drupal -->*/
+/* */
+/*   <!-- Moar Kitteh!! -->*/
+/*   <div id="kitteh2" width="400px" height="400px">*/
+/*   </div>*/
+/*   <!-- END Moar Kitteh -->*/
 /* */
 /*   <!-- Haiku Block -->*/
 /*   <div id="haiku" class="container">*/
@@ -254,6 +270,11 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*     </div>*/
 /*   </div>*/
 /*   <!-- END of Haiku Block -->*/
+/* */
+/*   <!-- Moar Kitteh!! -->*/
+/*   <div id="kitteh3" width="400px" height="400px">*/
+/*   </div>*/
+/*   <!-- END Moar Kitteh -->*/
 /* */
 /*   <!-- Footer -->*/
 /*   <div class="row">*/
