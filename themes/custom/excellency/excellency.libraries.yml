@@ -10,3 +10,17 @@ global-js:
 scroll-magic:
   js:
     assets/js/scrollmagic/ScrollMagic.min.js: {}
+
+bootstrap-css:
+  css:
+    theme:
+      assets/css/bootstrap/bootstrap.css: {}
+      assets/css/bootstrap/bootstrap-theme.css: {}
+
+bootstrap-js:
+  js:
+    assets/js/bootstrap/bootstrap.js: {}
+
+jquery:
+  js:
+    assets/js/jquery/jquery-2.2.3.js: {}

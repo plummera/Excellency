@@ -4,8 +4,12 @@ type: theme
 core: 8.x
 base: stable
 libraries:
+  - excellency/jquery
   - excellency/global-css
   - excellency/global-js
+  - excellency/bootstrap-css
+  - excellency/bootstrap-js
+
 stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.css
   - core/modules/system/css/system.module.css
