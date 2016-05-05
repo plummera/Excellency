@@ -6,7 +6,7 @@
       <li><a href="#">Home</a></li>
       <li><a href="#">The Excellence</a></li>
       <li><a href="#">Links</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
   <!-- END of Navigation Menu -->
@@ -23,11 +23,11 @@
   <!-- Kitteh!! -->
   <div id="kitteh" width="400px" height="400px">
     <div id="trigger1" class="spacer s0"></div>
-    <div class="spacer s2"></div>
-      <img id="glasses" class="box2 skin" src="{{ directory }}/assets/images/deal-with-it.png">
-	      <a href="http://anthonyplummer.elementfx.com" class="viewsource">Meow!</a>
-      </div>
-    <div class="spacer s2"></div>
+    <div id="trigger2" class="spacer s0"></div>
+      <a href="http://anthonyplummer.elementfx.com">
+        <img id="glasses" src="{{ directory }}/assets/images/deal-with-it.png">
+        <img id="lit" src="{{ directory }}/assets/images/sticker.png">
+      </a>
   </div>
   <!-- END Kitteh -->
 
@@ -86,7 +86,7 @@
   <!-- END Moar Kitteh -->
 
   <!-- Footer -->
-  <div class="row">
+  <div id="contact" class="row">
     <footer class="footer" role="contentinfo">
       {{ page.footer }}
       <!-- Footer Column 1 -->
@@ -113,6 +113,11 @@
       </div>
       <!-- END of Footer Column 4 -->
     </footer>
+  </div>
+  <div class="row">
+    <div id="bottom" class="col-sm-12">
+      <p>Powered by <a href="http://anthonyplummer.elementfx.com">Excellence</a></p>
+    </div>
   </div>
   <!-- END of Footer -->
 

@@ -1,20 +1,29 @@
-#animate1 {
-  position: absolute;
-  float: right;
-  top: 600px;
-  left: 500px;
-}
-
 #glasses {
   display: none;
   height: 125px;
-  left: 400px;
   position: absolute;
   top: 444px;
   width: 400px;
 }
 
-#trigger1 {
+#lit {
+  display: none;
+  height: 50px;
+  float: right;
+  left: 1200px;
   position: absolute;
-  top: 100px;
+  top: 582px;
+  width: 120px;
+}
+
+#trigger1 {
+  display: block;
+  position: absolute;
+  top: 165px;
+}
+
+#trigger2 {
+  display: block;
+  position: absolute;
+  top: 168px;
 }

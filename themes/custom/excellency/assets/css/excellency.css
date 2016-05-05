@@ -12,6 +12,15 @@ html {
   height: 325px;
 }
 
+#bottom {
+  background-color: #333;
+  color: white;
+  height: 30px;
+  padding-right: 35px;
+  padding-top: 5px;
+  text-align: right;
+}
+
 #footerBlock {
   border-right: 1px dotted black;
   display: block;
@@ -30,7 +39,8 @@ html {
 }
 
 #haiku {
-  margin-left: 225px;
+  display: block;
+  left: 225px;
   padding: 15px;
 }
 
@@ -40,8 +50,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
-  width: 100%;
+  height: 620px;
 }
 
 #kitteh2 {
@@ -50,8 +59,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
-  width: 100%;
+  height: 620px;
 }
 
 #kitteh3 {
@@ -60,29 +68,37 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
-  width: 100%;
-}
-
-#animate1 {
-  position: absolute;
-  float: right;
-  top: 600px;
-  left: 500px;
+  height: 620px;
 }
 
 #glasses {
   display: none;
   height: 125px;
-  left: 400px;
   position: absolute;
   top: 444px;
   width: 400px;
 }
 
-#trigger1 {
+#lit {
+  display: none;
+  height: 50px;
+  float: right;
+  left: 1200px;
   position: absolute;
-  top: 100px;
+  top: 582px;
+  width: 120px;
+}
+
+#trigger1 {
+  display: block;
+  position: absolute;
+  top: 165px;
+}
+
+#trigger2 {
+  display: block;
+  position: absolute;
+  top: 168px;
 }
 
 .menu a {

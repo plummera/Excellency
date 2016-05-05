@@ -48,7 +48,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
       <li><a href=\"#\">Home</a></li>
       <li><a href=\"#\">The Excellence</a></li>
       <li><a href=\"#\">Links</a></li>
-      <li><a href=\"#\">Contact</a></li>
+      <li><a href=\"#contact\">Contact</a></li>
     </ul>
   </div>
   <!-- END of Navigation Menu -->
@@ -65,14 +65,17 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
   <!-- Kitteh!! -->
   <div id=\"kitteh\" width=\"400px\" height=\"400px\">
     <div id=\"trigger1\" class=\"spacer s0\"></div>
-    <div class=\"spacer s2\"></div>
-      <img id=\"glasses\" class=\"box2 skin\" src=\"";
-        // line 27
+    <div id=\"trigger2\" class=\"spacer s0\"></div>
+      <a href=\"http://anthonyplummer.elementfx.com\">
+        <img id=\"glasses\" src=\"";
+        // line 28
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["directory"]) ? $context["directory"] : null), "html", null, true));
         echo "/assets/images/deal-with-it.png\">
-\t      <a href=\"http://anthonyplummer.elementfx.com\" class=\"viewsource\">Meow!</a>
-      </div>
-    <div class=\"spacer s2\"></div>
+        <img id=\"lit\" src=\"";
+        // line 29
+        echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["directory"]) ? $context["directory"] : null), "html", null, true));
+        echo "/assets/images/sticker.png\">
+      </a>
   </div>
   <!-- END Kitteh -->
 
@@ -137,7 +140,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
   <!-- END Moar Kitteh -->
 
   <!-- Footer -->
-  <div class=\"row\">
+  <div id=\"contact\" class=\"row\">
     <footer class=\"footer\" role=\"contentinfo\">
       ";
         // line 91
@@ -168,6 +171,11 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
       <!-- END of Footer Column 4 -->
     </footer>
   </div>
+  <div class=\"row\">
+    <div id=\"bottom\" class=\"col-sm-12\">
+      <p>Powered by <a href=\"http://anthonyplummer.elementfx.com\">Excellence</a></p>
+    </div>
+  </div>
   <!-- END of Footer -->
 
 </div>
@@ -186,7 +194,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 
     public function getDebugInfo()
     {
-        return array (  144 => 91,  95 => 45,  82 => 35,  71 => 27,  43 => 1,);
+        return array (  147 => 91,  98 => 45,  85 => 35,  76 => 29,  72 => 28,  43 => 1,);
     }
 }
 /* <div class="layout-container">*/
@@ -197,7 +205,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*       <li><a href="#">Home</a></li>*/
 /*       <li><a href="#">The Excellence</a></li>*/
 /*       <li><a href="#">Links</a></li>*/
-/*       <li><a href="#">Contact</a></li>*/
+/*       <li><a href="#contact">Contact</a></li>*/
 /*     </ul>*/
 /*   </div>*/
 /*   <!-- END of Navigation Menu -->*/
@@ -214,11 +222,11 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*   <!-- Kitteh!! -->*/
 /*   <div id="kitteh" width="400px" height="400px">*/
 /*     <div id="trigger1" class="spacer s0"></div>*/
-/*     <div class="spacer s2"></div>*/
-/*       <img id="glasses" class="box2 skin" src="{{ directory }}/assets/images/deal-with-it.png">*/
-/* 	      <a href="http://anthonyplummer.elementfx.com" class="viewsource">Meow!</a>*/
-/*       </div>*/
-/*     <div class="spacer s2"></div>*/
+/*     <div id="trigger2" class="spacer s0"></div>*/
+/*       <a href="http://anthonyplummer.elementfx.com">*/
+/*         <img id="glasses" src="{{ directory }}/assets/images/deal-with-it.png">*/
+/*         <img id="lit" src="{{ directory }}/assets/images/sticker.png">*/
+/*       </a>*/
 /*   </div>*/
 /*   <!-- END Kitteh -->*/
 /* */
@@ -277,7 +285,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*   <!-- END Moar Kitteh -->*/
 /* */
 /*   <!-- Footer -->*/
-/*   <div class="row">*/
+/*   <div id="contact" class="row">*/
 /*     <footer class="footer" role="contentinfo">*/
 /*       {{ page.footer }}*/
 /*       <!-- Footer Column 1 -->*/
@@ -304,6 +312,11 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*       </div>*/
 /*       <!-- END of Footer Column 4 -->*/
 /*     </footer>*/
+/*   </div>*/
+/*   <div class="row">*/
+/*     <div id="bottom" class="col-sm-12">*/
+/*       <p>Powered by <a href="http://anthonyplummer.elementfx.com">Excellence</a></p>*/
+/*     </div>*/
 /*   </div>*/
 /*   <!-- END of Footer -->*/
 /* */
