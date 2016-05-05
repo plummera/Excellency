@@ -9,7 +9,16 @@ global-js:
 
 scroll-magic:
   js:
-    assets/js/scrollmagic/ScrollMagic.min.js: {}
+    assets/js/scrollmagic/plugins/TweenMax.min.js: {}
+    assets/js/scrollmagic/plugins/TimelineMax.min.js: {}
+    assets/js/scrollmagic/plugins/velocity.min.js: {}
+    assets/js/scrollmagic/plugins/jquery.gsap.min.js: {}
+    assets/js/scrollmagic/ScrollMagic.js: {}
+    assets/js/scrollmagic/plugins/animation.gsap.js: {}
+    assets/js/scrollmagic/plugins/animation.velocity.js: {}
+    assets/js/scrollmagic/plugins/debug.addIndicators.js: {}
+    assets/js/scrollmagic/plugins/jquery.ScrollMagic.js: {}
+    assets/js/scrollmagic/plugins/EasePack.min.js: {}
 
 bootstrap-css:
   css:

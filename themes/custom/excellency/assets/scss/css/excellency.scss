@@ -12,6 +12,18 @@ html {
   height: 325px;
 }
 
+#footerBlock {
+  border-right: 1px dotted black;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-align: center;
+
+  p {
+    margin-top: 50px;
+  }
+}
+
 #content {
   background-color: #333;
   color: white;
@@ -32,6 +44,7 @@ html {
   height: 600px;
   width: 100%;
 }
+
 
 .menu {
   a {
@@ -78,3 +91,4 @@ html {
     background-color: #4CAF50;
   }
 }
+

@@ -2,3 +2,15 @@
   background-image: url("../images/backgrounds/stressed-linen.png");
   height: 325px;
 }
+
+#footerBlock {
+  border-right: 1px dotted black;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-align: center;
+
+  p {
+    margin-top: 50px;
+  }
+}

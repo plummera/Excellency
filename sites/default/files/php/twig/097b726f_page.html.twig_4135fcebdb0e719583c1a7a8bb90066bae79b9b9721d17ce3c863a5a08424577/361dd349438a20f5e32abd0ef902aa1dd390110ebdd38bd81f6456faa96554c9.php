@@ -42,6 +42,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
         // line 1
         echo "<div class=\"layout-container\">
 
+  <!-- Navigation Menu -->
   <div class=\"menu\">
     <ul>
       <li><a href=\"#\">Home</a></li>
@@ -50,23 +51,37 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
       <li><a href=\"#\">Contact</a></li>
     </ul>
   </div>
+  <!-- END of Navigation Menu -->
 
+  <!-- Bootstrap First Impression -->
   <div class=\"container\">
     <div class=\"jumbotron\">
       <h1>Project Excellence</h1>
       <p>This is a sample project to serve as a simple exercise utilizing the ScollMagicJS library for Parallax scrolling in conjuction with the GreenSock animation framework.</p>
     </div>
   </div>
+  <!-- End of Bootstrap First Impression -->
 
-  <div id=\"splash-image\" width=\"400px\" height=\"400px\"></div>
+  <!-- Kitteh!! -->
+  <div id=\"splash-image\" width=\"400px\" height=\"400px\">
+    <div class=\"spacer s2\"></div>
+      <div id=\"animate1\" class=\"box2 skin\">
+\t     <p>You wouldn't like me, when I'm angry!</p>
+\t      <a href=\"#\" class=\"viewsource\">view source</a>
+      </div>
+    <div class=\"spacer s2\"></div>
+  </div>
+  <div id=\"trigger1\" class=\"spacer s0\"></div>
+  <!-- END Kitteh -->
 
   <header role=\"banner\">
     ";
-        // line 22
+        // line 36
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "html", null, true));
         echo "
   </header>
 
+  <!-- Main Content from Drupal -->
   <div class=\"container\">
     <div class=\"col-md-12\">
       <main role=\"main\">
@@ -74,7 +89,7 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 
         <div id=\"content\" class=\"layout-content\">
           ";
-        // line 31
+        // line 46
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
         echo "
         </div>
@@ -82,7 +97,9 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
       </main>
     </div>
   </div>
+  <!-- END of Main Content from Drupal -->
 
+  <!-- Haiku Block -->
   <div id=\"haiku\" class=\"container\">
     <div class=\"row\">
       <div class=\"col-sm-4\">
@@ -105,13 +122,41 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
       </div>
     </div>
   </div>
+  <!-- END of Haiku Block -->
 
-  <footer class=\"footer\" role=\"contentinfo\">
-    ";
-        // line 62
+  <!-- Footer -->
+  <div class=\"row\">
+    <footer class=\"footer\" role=\"contentinfo\">
+      ";
+        // line 82
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer", array()), "html", null, true));
         echo "
-  </footer>
+      <!-- Footer Column 1 -->
+      <div id=\"footerBlock\" class=\"col-sm-3\">
+        <p>testing</p>
+      </div>
+      <!-- END of Footer Column 1 -->
+
+      <!-- Footer Column 2 -->
+      <div id=\"footerBlock\" class=\"col-sm-3\">
+        <p>testing</p>
+      </div>
+      <!-- END of Footer Column 2 -->
+
+      <!-- Footer Column 3 -->
+      <div id=\"footerBlock\" class=\"col-sm-3\">
+        <p>testing</p>
+      </div>
+      <!-- END of Footer Column 3 -->
+
+      <!-- Footer Column 4 -->
+      <div id=\"footerBlock\" class=\"col-sm-3\">
+        <p>testing</p>
+      </div>
+      <!-- END of Footer Column 4 -->
+    </footer>
+  </div>
+  <!-- END of Footer -->
 
 </div>
 ";
@@ -129,11 +174,12 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 
     public function getDebugInfo()
     {
-        return array (  112 => 62,  78 => 31,  66 => 22,  43 => 1,);
+        return array (  132 => 82,  93 => 46,  80 => 36,  43 => 1,);
     }
 }
 /* <div class="layout-container">*/
 /* */
+/*   <!-- Navigation Menu -->*/
 /*   <div class="menu">*/
 /*     <ul>*/
 /*       <li><a href="#">Home</a></li>*/
@@ -142,20 +188,34 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*       <li><a href="#">Contact</a></li>*/
 /*     </ul>*/
 /*   </div>*/
+/*   <!-- END of Navigation Menu -->*/
 /* */
+/*   <!-- Bootstrap First Impression -->*/
 /*   <div class="container">*/
 /*     <div class="jumbotron">*/
 /*       <h1>Project Excellence</h1>*/
 /*       <p>This is a sample project to serve as a simple exercise utilizing the ScollMagicJS library for Parallax scrolling in conjuction with the GreenSock animation framework.</p>*/
 /*     </div>*/
 /*   </div>*/
+/*   <!-- End of Bootstrap First Impression -->*/
 /* */
-/*   <div id="splash-image" width="400px" height="400px"></div>*/
+/*   <!-- Kitteh!! -->*/
+/*   <div id="splash-image" width="400px" height="400px">*/
+/*     <div class="spacer s2"></div>*/
+/*       <div id="animate1" class="box2 skin">*/
+/* 	     <p>You wouldn't like me, when I'm angry!</p>*/
+/* 	      <a href="#" class="viewsource">view source</a>*/
+/*       </div>*/
+/*     <div class="spacer s2"></div>*/
+/*   </div>*/
+/*   <div id="trigger1" class="spacer s0"></div>*/
+/*   <!-- END Kitteh -->*/
 /* */
 /*   <header role="banner">*/
 /*     {{ page.header }}*/
 /*   </header>*/
 /* */
+/*   <!-- Main Content from Drupal -->*/
 /*   <div class="container">*/
 /*     <div class="col-md-12">*/
 /*       <main role="main">*/
@@ -168,7 +228,9 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*       </main>*/
 /*     </div>*/
 /*   </div>*/
+/*   <!-- END of Main Content from Drupal -->*/
 /* */
+/*   <!-- Haiku Block -->*/
 /*   <div id="haiku" class="container">*/
 /*     <div class="row">*/
 /*       <div class="col-sm-4">*/
@@ -191,10 +253,38 @@ class __TwigTemplate_b63554601d12f7d71488db32e00a4c1d5bb54905797f8caeb7f4e8d256a
 /*       </div>*/
 /*     </div>*/
 /*   </div>*/
+/*   <!-- END of Haiku Block -->*/
 /* */
-/*   <footer class="footer" role="contentinfo">*/
-/*     {{ page.footer }}*/
-/*   </footer>*/
+/*   <!-- Footer -->*/
+/*   <div class="row">*/
+/*     <footer class="footer" role="contentinfo">*/
+/*       {{ page.footer }}*/
+/*       <!-- Footer Column 1 -->*/
+/*       <div id="footerBlock" class="col-sm-3">*/
+/*         <p>testing</p>*/
+/*       </div>*/
+/*       <!-- END of Footer Column 1 -->*/
+/* */
+/*       <!-- Footer Column 2 -->*/
+/*       <div id="footerBlock" class="col-sm-3">*/
+/*         <p>testing</p>*/
+/*       </div>*/
+/*       <!-- END of Footer Column 2 -->*/
+/* */
+/*       <!-- Footer Column 3 -->*/
+/*       <div id="footerBlock" class="col-sm-3">*/
+/*         <p>testing</p>*/
+/*       </div>*/
+/*       <!-- END of Footer Column 3 -->*/
+/* */
+/*       <!-- Footer Column 4 -->*/
+/*       <div id="footerBlock" class="col-sm-3">*/
+/*         <p>testing</p>*/
+/*       </div>*/
+/*       <!-- END of Footer Column 4 -->*/
+/*     </footer>*/
+/*   </div>*/
+/*   <!-- END of Footer -->*/
 /* */
 /* </div>*/
 /* */

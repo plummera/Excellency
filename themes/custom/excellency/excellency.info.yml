@@ -5,6 +5,7 @@ core: 8.x
 base: stable
 libraries:
   - excellency/jquery
+  - excellency/scroll-magic
   - excellency/global-css
   - excellency/global-js
   - excellency/bootstrap-css

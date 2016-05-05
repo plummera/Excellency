@@ -60,29 +60,29 @@ grunt.initConfig({
     }
   },
 
-  jshint: {
-    options: {
-      curly: true,
-      eqeqeq: true,
-      immed: true,
-      latedef: true,
-      newcap: true,
-      noarg: true,
-      sub: true,
-      undef: true,
-      unused: true,
-      boss: true,
-      eqnull: true,
-      browser: true,
-      globals: {
-        jQuery: true,
-        "$": false
-      }
-    },
-    excellency: {
-      src: ['<%= project.js %>']
-    }
-  },
+  // jshint: {
+  //   options: {
+  //     curly: true,
+  //     eqeqeq: true,
+  //     immed: true,
+  //     latedef: true,
+  //     newcap: true,
+  //     noarg: true,
+  //     sub: true,
+  //     undef: true,
+  //     unused: true,
+  //     boss: true,
+  //     eqnull: true,
+  //     browser: true,
+  //     globals: {
+  //       jQuery: true,
+  //       "$": false
+  //     }
+  //   },
+  //   excellency: {
+  //     src: ['<%= project.js %>']
+  //   }
+  // },
 
   /**
    * Sass
@@ -107,7 +107,7 @@ grunt.initConfig({
 
     excellency: {
       files: ['<%= project.assets %>/test/js/**/*.js', '<%= project.assets %>/test/scss/**/*.scss'],
-      tasks: ['jshint', 'concat:sass', 'sass', 'concat', 'uglify']
+      tasks: ['concat:sass', 'sass', 'concat', 'uglify']
     }
   }
 });
@@ -121,5 +121,5 @@ grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-contrib-compass');
 
 // Default task.
-grunt.registerTask('default', ['jshint', 'concat:sass', 'sass', 'concat', 'uglify']);
+grunt.registerTask('default', ['concat:sass', 'sass', 'concat', 'uglify']);
 }
