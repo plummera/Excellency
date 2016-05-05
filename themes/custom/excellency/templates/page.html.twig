@@ -1,5 +1,6 @@
 <div class="layout-container">
 
+  <!-- Navigation Menu -->
   <div class="menu">
     <ul>
       <li><a href="#">Home</a></li>
@@ -8,34 +9,42 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
+  <!-- END of Navigation Menu -->
 
+  <!-- Bootstrap First Impression -->
   <div class="container">
     <div class="jumbotron">
       <h1>Project Excellence</h1>
       <p>This is a sample project to serve as a simple exercise utilizing the ScollMagicJS library for Parallax scrolling in conjuction with the GreenSock animation framework.</p>
     </div>
   </div>
+  <!-- End of Bootstrap First Impression -->
 
+  <!-- Kitteh!! -->
   <div id="splash-image" width="400px" height="400px"></div>
+  <!-- END Kitteh -->
 
   <header role="banner">
     {{ page.header }}
   </header>
 
+  <!-- Main Content from Drupal -->
   <div class="container">
     <div class="col-md-12">
       <main role="main">
         <a id="main-content" tabindex="-1"></a>
 
-        <div class="layout-content">
+        <div id="content" class="layout-content">
           {{ page.content }}
         </div>
 
       </main>
     </div>
   </div>
+  <!-- END of Main Content from Drupal -->
 
-  <div class="container">
+  <!-- Haiku Block -->
+  <div id="haiku" class="container">
     <div class="row">
       <div class="col-sm-4">
         <h3>Whiskers</h3>
@@ -57,11 +66,31 @@
       </div>
     </div>
   </div>
+  <!-- END of Haiku Block -->
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    {{ page.footer }}
+    <!-- Footer Column 1 -->
+    <div class="col-sm-3">
+    </div>
+    <!-- END of Footer Column 1 -->
+
+    <!-- Footer Column 2 -->
+    <div class="col-sm-3">
+    </div>
+    <!-- END of Footer Column 2 -->
+
+    <!-- Footer Column 3 -->
+    <div class="col-sm-3">
+    </div>
+    <!-- END of Footer Column 3 -->
+
+    <!-- Footer Column 4 -->
+    <div class="col-sm-3">
+    </div>
+    <!-- END of Footer Column 4 -->
+  </footer>
+  <!-- END of Footer -->
 
 </div>
