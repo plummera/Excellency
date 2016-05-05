@@ -722,10 +722,14 @@ $databases['default']['default'] = array (
   'username' => 'root',
   'password' => 'root',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => '127.0.0.1',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_ySaq4pWDVx0GvUWHUKl75v5L36DksIzozLUnDPKqbiVMHMYuewnwcGwN5FyBSBKbuwZKEjNEZQ/sync';
+
+$settings['trusted_host_patterns'] = array(
+  '^localhost$',
+);

@@ -1,0 +1,12 @@
+global-css:
+  css:
+    theme:
+      assets/css/excellency.css: {}
+
+global-js:
+  js:
+    assets/js/excellency.js: {}
+
+scroll-magic:
+  js:
+    assets/js/scrollmagic/ScrollMagic.min.js: {}
