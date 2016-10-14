@@ -1,32 +1,41 @@
-// init Kitteh Controller
-var controller = new ScrollMagic.Controller();
+// Kitteh
+var kitteh = new ScrollMagic.Controller();
+new ScrollMagic.Scene({triggerElement: "#SGslideIn", duration: 120})
+        .setTween("#glasses", {left: "392px", display: "block", position: "fixed"})
+        .addTo(kitteh);
 
-// Animation for Kittehs Glasses and Lit
-new ScrollMagic.Scene({triggerElement: "#trigger1"})
-        .setTween("#glasses", 1.0, {left: "400px", display: "block"})
-        .addIndicators({name: "glasses (duration: 1.0)"})
-        .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#LitSlideIn", duration: 120})
+        .setTween("#lit", {left: "650px", display: "block", position: "fixed"})
+        .addTo(kitteh);
 
-new ScrollMagic.Scene({triggerElement: "#trigger2"})
-        .setTween("#lit", 1.0, {left: "638px", display: "block"})
-        .addIndicators({name: "lit (duration: 1.0)"})
-        .addTo(controller);
+new ScrollMagic.Scene({triggerElement: "#SGslideOut", duration: 120})
+        .setTween("#glasses", {display: "none"})
+        .addTo(kitteh);
 
-// init Background Controller2
-var controller2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "85%"}});
+new ScrollMagic.Scene({triggerElement: "#LitSlideOut", duration: 120})
+        .setTween("#lit", {display: "none"})
+        .addTo(kitteh);
 
-// Backgrounds
+
+
+// Background Easing
+var backgroundEasing = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "85%"}});
 new ScrollMagic.Scene({triggerElement: "#kitteh"})
 				.setTween("#kitteh > div", {y: "800px", ease: Linear.easeNone})
-				.addIndicators()
-				.addTo(controller2);
+				.addTo(backgroundEasing);
 
 new ScrollMagic.Scene({triggerElement: "#kitteh2"})
 				.setTween("#kitteh2 > div", {y: "800px", ease: Linear.easeNone})
-				.addIndicators()
-				.addTo(controller2);
+				.addTo(backgroundEasing);
 
 new ScrollMagic.Scene({triggerElement: "#kitteh3"})
 				.setTween("#kitteh3 > div", {y: "800px", ease: Linear.easeNone})
-				.addIndicators()
-				.addTo(controller2);
+				.addTo(backgroundEasing);
+
+
+
+// catPhoto Fading
+var photoFade = new ScrollMagic.Controller();
+new ScrollMagic.Scene({triggerElement: "#Puddin"})
+				.setVelocity(".catPhoto-1", {opacity: 0}, {duration: 400})
+				.addTo(photoFade);

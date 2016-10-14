@@ -1,103 +1,97 @@
-/*! Excellency - v0.1 - 2016-05-05
+/*! Excellency - v0.1 - 2016-05-06
  * https://www.github.com/plummera/Excellency//
 * Copyright (c) 2016 Anthony T. Plummer; Unlicensed for the free! */
-var container = document.getElementById('container');
-var loader = document.getElementById('loader');
-var circleL = document.getElementById('circleL');
-var circleR = document.getElementById('circleR');
-var jump = document.getElementById('jump');
-var jumpRef = jump.cloneNode();
+// Kitteh
+var kitteh = new ScrollMagic.Controller();
+new ScrollMagic.Scene({triggerElement: "#SGslideIn", duration: 120})
+        .setTween("#glasses", {left: "392px", display: "block", position: "fixed"})
+        .addTo(kitteh);
 
-loader.appendChild(jumpRef);
+new ScrollMagic.Scene({triggerElement: "#LitSlideIn", duration: 120})
+        .setTween("#lit", {left: "650px", display: "block", position: "fixed"})
+        .addTo(kitteh);
 
-TweenMax.set([container, loader], {
-	position: 'absolute',
-	top:'50%',
-	left: '50%',
-	xPercent: -50,
-	yPercent: -50
-})
+new ScrollMagic.Scene({triggerElement: "#SGslideOut", duration: 120})
+        .setTween("#glasses", {display: "none"})
+        .addTo(kitteh);
 
-TweenMax.set(jumpRef, {
-	transformOrigin: '50% 110%',
-	scaleY: -1,
-	alpha: 0.05
-})
+new ScrollMagic.Scene({triggerElement: "#LitSlideOut", duration: 120})
+        .setTween("#lit", {display: "none"})
+        .addTo(kitteh);
 
-var tl = new TimelineMax({
-	repeat: -1,
-	yoyo: false
-});
 
-tl.timeScale(3);
 
-tl.set([jump, jumpRef], {
-	drawSVG: '0% 0%'
-})
-.set([circleL, circleR], {
-	attr: {
-		rx: 0,
-		ry: 0,
-	}
-})
-.to([jump, jumpRef], 0.4, {
-	drawSVG: '0% 30%',
-	ease: Linear.easeNone
-})
-.to(circleL, 2, {
-	attr: {
-		rx: '+=30',
-		ry: '+=10'
-	},
-	alpha: 0,
-	ease: Power1.easeOut
-}, '-=0.1')
-.to([jump, jumpRef], 1, {
-	drawSVG: '50% 80%',
-	ease: Linear.easeNone
-}, '-=1.9')
-.to([jump, jumpRef], 0.7, {
-	drawSVG: '100% 100%',
-	ease: Linear.easeNone
-}, '-=0.9')
-.to(circleR, 2, {
-	attr: {
-		rx: '+=30',
-		ry: '+=10'
-	},
-	alpha: 0,
-	ease: Power1.easeOut
-}, '-=.5')
-
-// init Kitteh Controller
-var controller = new ScrollMagic.Controller();
-
-// Animation for Kittehs Glasses and Lit
-new ScrollMagic.Scene({triggerElement: "#trigger1"})
-        .setTween("#glasses", 1.0, {left: "400px", display: "block"})
-        .addIndicators({name: "glasses (duration: 1.0)"})
-        .addTo(controller);
-
-new ScrollMagic.Scene({triggerElement: "#trigger2"})
-        .setTween("#lit", 1.0, {left: "638px", display: "block"})
-        .addIndicators({name: "lit (duration: 1.0)"})
-        .addTo(controller);
-
-// init Background Controller2
-var controller2 = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "85%"}});
-
-// Backgrounds
+// Background Easing
+var backgroundEasing = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "85%"}});
 new ScrollMagic.Scene({triggerElement: "#kitteh"})
 				.setTween("#kitteh > div", {y: "800px", ease: Linear.easeNone})
-				.addIndicators()
-				.addTo(controller2);
+				.addTo(backgroundEasing);
 
 new ScrollMagic.Scene({triggerElement: "#kitteh2"})
 				.setTween("#kitteh2 > div", {y: "800px", ease: Linear.easeNone})
-				.addIndicators()
-				.addTo(controller2);
+				.addTo(backgroundEasing);
 
 new ScrollMagic.Scene({triggerElement: "#kitteh3"})
 				.setTween("#kitteh3 > div", {y: "800px", ease: Linear.easeNone})
-				.addIndicators()
-				.addTo(controller2);
+				.addTo(backgroundEasing);
+
+
+
+// catPhoto Fading
+var photoFade = new ScrollMagic.Controller();
+new ScrollMagic.Scene({triggerElement: "#Puddin"})
+				.setVelocity(".catPhoto-1", {opacity: 0}, {duration: 400})
+				.addTo(photoFade);
+
+// Neko's Bounce
+$(function () { // wait for document ready
+  var bounce = {
+    hi : {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+          {x: -100,	y: 10},
+          {x: 300,	y: 20}
+        ]
+    },
+    play : {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+          {x: 510,	y: 30},
+          {x: 620,	y: 10},
+          {x: 500,	y: 20},
+          {x: 380,	y: 10},
+          {x: 500,	y: 20},
+          {x: 580,	y: 10},
+          {x: 620,	y: 35}
+        ]
+    },
+    bye : {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+          {x: 660,	y: 30},
+          {x: 800,	y: 20},
+          {x: $(window).width() + 600,	y: 10},
+        ]
+    }
+  };
+// Start Niko
+var nikoPlay = new ScrollMagic.Controller();
+
+// Start Play
+var tween = new TimelineMax()
+  .add(TweenMax.to($(".catPhoto-2"), 1.2, {css:{bezier:bounce.hi}, ease:Power1.easeInOut}))
+  .add(TweenMax.to($(".catPhoto-2"), 2, {css:{bezier:bounce.play}, ease:Power1.easeInOut}))
+  .add(TweenMax.to($(".catPhoto-2"), 1, {css:{bezier:bounce.bye}, ease:Power1.easeInOut}));
+
+new ScrollMagic.Scene({triggerElement: "#Neko", duration: 400, offset: 100})
+          .setPin(".catPhoto-2")
+          .setTween(tween)
+          .addTo(nikoPlay);
+})
+
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}

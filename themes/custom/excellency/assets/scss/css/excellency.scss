@@ -1,4 +1,4 @@
-/*! Excellency - v0.1 - 2016-05-05
+/*! Excellency - v0.1 - 2016-05-06
  * https://www.github.com/plummera/Excellency//
 * Copyright (c) 2016 Anthony T. Plummer; Unlicensed for the free! */
 html {
@@ -7,9 +7,36 @@ html {
   font-family: fantasy;
 }
 
+.catPhoto-1 {
+  border: 2px solid black;
+  height: 250px;
+  left: 210px;
+  position: relative;
+  width: 300px;
+}
+
+.catPhoto-2 {
+  border: 2px solid black;
+  display: none;
+  height: 250px;
+  left: -400px;
+  position: relative;
+  width: 300px;
+}
+
 .footer {
   background-image: url("../images/backgrounds/stressed-linen.png");
-  height: 325px;
+  height: auto;
+}
+
+.round-block {
+  border: 2px solid black;
+  border-radius: 25px;
+  background: #333;
+  display: block;
+  margin: 50px;
+  padding: 50px;
+  position: relative;
 }
 
 #bottom {
@@ -24,12 +51,11 @@ html {
 #footerBlock {
   border-right: 1px dotted black;
   display: block;
-  height: 100%;
-  position: relative;
-  text-align: center;
 
   p {
-    margin-top: 50px;
+    color: white;
+    font-size: 12px;
+    text-align: left;
   }
 }
 
@@ -72,12 +98,17 @@ html {
   height: 620px;
 }
 
+#main {
+  top: 600px;
+  position: absolute;
+}
+
 
 #glasses {
   display: none;
   height: 125px;
   position: absolute;
-  top: 444px;
+  top: 190px;
   width: 400px;
 }
 
@@ -85,22 +116,86 @@ html {
   display: none;
   height: 50px;
   float: right;
-  left: 1200px;
+  left: 90%;
   position: absolute;
-  top: 582px;
+  top: 320px;
   width: 120px;
 }
 
-#trigger1 {
+#LitSlideIn {
   display: block;
   position: absolute;
-  top: 165px;
+  top: 600px;
 }
 
-#trigger2 {
+#LitSlideOut {
   display: block;
   position: absolute;
-  top: 168px;
+  top: 845px;
+}
+
+#Neko {
+  display: block;
+  position: absolute;
+  top: 1750px;
+}
+
+#Puddin {
+  display: block;
+  position: absolute;
+  top: 1200px;
+}
+
+#SGslideIn {
+  display: block;
+  position: absolute;
+  top: 600px;
+}
+
+#SGslideOut {
+  display: block;
+  position: absolute;
+  top: 930px;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+
+
+  #Puddin {
+    display: none;
+    left: 1px;
+  }
+
+  #glasses {
+    display: none !important;
+  }
+
+  #lit {
+    display: none;
+  }
 }
 
 .menu {
@@ -149,3 +244,31 @@ html {
   }
 }
 
+a.navbar-brand {
+  color: green !important;
+}
+
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #111;}
+
+ul.topnav li.icon {display: none;}
